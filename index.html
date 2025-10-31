@@ -1,11 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Journify — Simple Travel Plans</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Single:wght@100..900&family=Shojumaru&family=ZCOOL+KuaiLe&display=swap" rel="stylesheet">
+  <style>
+    html{
+        height: 150vh;
+    }
+  </style>
 </head>
 <body>
-    
+  <header class="header">
+    <div class="container">
+      <div class="brand">
+        <a href="index.html" class="brand-link">Journify</a>
+        <span class="tag">Travel Itinerary Planner</span>
+      </div>
+
+      <nav class="nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="mytrips.html">My Trips</a></li>
+          <li><a href="#destinations">Destinations</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h1 id="id1">Plan your trip with Journify</h1>
+      <p>Beginner friendly 5-7 day plans. Click a destination to open its full plan page.</p>
+      <div class="buttons">
+        <a class="btn" href="japan.html">Japan</a>
+        <a class="btn" href="paris.html">Paris</a>
+        <a class="btn" href="dubai.html">Dubai</a>
+      </div>
+    </section>
+    <section class="features">
+      <h2>Why use Journify?</h2>
+      <ul>
+        <li>Clear day-by-day plans</li>
+        <li>Helpful tips for each place</li>
+        <li>No hidden charges</li>
+      </ul>
+    </section>
+    <section id="destinations" class="destinations">
+      <h2>Destinations</h2>
+
+      <div class="cards">
+        <a class="card" href="japan.html">
+          <div id="japan" class="image-slot"></div>
+          <h3>Japan</h3>
+          <p>7-day plan · Culture, food, temples</p>
+        </a>
+
+        <a class="card" href="paris.html">
+          <div id="Paris" class="image-slot"></div>
+          <h3>Paris</h3>
+          <p>6-day plan · Museums, cafés, landmarks</p>
+        </a>
+
+        <a class="card" href="dubai.html">
+          <div id="Dubai" class="image-slot"></div>
+          <h3>Dubai</h3>
+          <p>5-day plan · Desert, skyline, shopping</p>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 Journify</p>
+    </div>
+  </footer>
 </body>
 </html>

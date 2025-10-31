@@ -1,0 +1,171 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { height: 100%; font-family: Arial, Helvetica, sans-serif; }
+body {
+  background: #f7f9fb;
+  color: #1a1a1a;
+  line-height: 1.4;
+  min-height: 120vh;
+}
+.container {
+  width: 92%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 16px 0;
+}
+#id1{
+    font-family: "Bitcount Grid Single";
+}
+.site-header {
+  background: #ffffff;
+  border-bottom: 1px solid #e6e9ee;
+  position: sticky;
+  top: 0;
+}
+.header{
+    background: #ffffff;
+  border-bottom: 1px solid #e6e9ee;
+  position: sticky;
+  top: 0;
+}
+.brand {
+  display: inline-block;
+}
+.brand-link {
+  font-weight: bold;
+  font-size: 20px;
+  text-decoration: none;
+  color: #1a1a1a;
+}
+.tag { display: block; font-size: 12px; color: #666; margin-top: 4px; }
+.nav { float: right; }
+.nav ul { list-style: none; display: flex; gap: 12px; }
+.nav a { text-decoration: none; color: #333; padding: 8px 10px; border-radius: 6px; }
+.nav a:hover { background: #eef4ff; }
+.hero {
+  /* background: #ffffff; */
+  padding: 30px;
+  padding-bottom: 100px;
+  margin-top: 16px;
+  border-radius: 8px;
+  border: 1px solid #e6e9ee;
+  text-align: center;
+  background-image: url(images/flight.jpg);
+  background-position: center;
+  text-align: center;
+  background-size: cover;
+  
+
+}
+.hero h1 { font-size: 28px; margin-bottom: 8px; }
+.hero p { color: #555; margin-bottom: 12px; }
+.buttons { margin-bottom: 8px; }
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  background: #3b82f6;
+  padding: 8px 12px;
+  margin: 4px;
+  border-radius: 6px;
+  font-weight: 600;
+  
+}
+.btn:hover { background: #2b6fd6; }
+.features {
+  margin: 18px 0;
+  background: #fff;
+  padding: 14px;
+  border-radius: 8px;
+  border: 1px solid #e6e9ee;
+}
+.features ul { list-style: disc; padding-left: 18px; color: #444; }
+
+
+.destinations { margin-bottom: 18px; }
+.cards {
+  display: flex;
+  gap: 12px;
+  margin-top: 12px;
+}
+.card {
+  background: #fff;
+  text-decoration: none;
+  color: inherit;
+  width: 30%;
+  min-width: 200px;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #e6e9ee;
+}
+.card h3 { margin-top: 8px; margin-bottom: 6px; }
+.card p { color: #666; font-size: 14px; }
+
+.image-slot {
+  height: 110px;
+  background: #fbfbfb;
+  border: 2px #e2e8f0;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #777;
+  font-size: 13px;
+  padding-bottom: 200px;
+}
+.site-footer { margin-top: 18px; color: #666; font-size: 14px; text-align: center; padding: 16px 0; }
+#japan{
+    background-image: url(images/Japan1.jpg);
+    background-size: cover;
+}
+#japan-page1{
+    background-image: url(images/Japan2.jpg);
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 300px;
+}
+#japan-page2{
+    background-image: url(images/Japan3.jpg);
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 300px;
+}
+#Paris{
+    background-image: url(images/Paris1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#Paris-page1{
+    background-image: url(images/leonard-cotte-R5scocnOOdM-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 300px;
+}
+#Paris-page2{
+    background-image: url(images/Paris3.jpg);
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 300px;
+}
+#Dubai{
+    background-image: url(images/Dubai1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#Dubai-page1{
+    background-image: url(images/Dubai2.jpg);
+    background-position: center;
+    background-size: cover;
+    padding-bottom: 300px;
+}
+#Dubai-page2{
+    background-image: url(images/Dubai3.jpg);
+    background-position: center;
+    background-size: cover;
+    padding-bottom: 300px;
+}
+
+
+.card:hover{
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+}
