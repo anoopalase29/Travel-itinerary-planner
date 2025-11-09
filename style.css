@@ -180,30 +180,50 @@ body {
 .aside{
   color: white;
 }
-/* For smaller screens */
-@media (max-width:480px){
-  .brand-link{
-    font-size: 1.5rem;
+ @media (max-width: 768px) {
+  .cards {
+    flex-wrap: wrap;
+    justify-content: center; 
   }
-  .banner h1{
-    font-size: 1.6rem;
+
+  .card {
+    width: 48%;
+    margin-bottom: 12px;
   }
-  .buttons a{
-    width: 100%;
+}
+@media (max-width: 600px) {
+  .brand {
+    display: block;
     text-align: center;
   }
-  .nav ul{
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
+  .nav {
+    float: none; 
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
   }
-  .features ul{
-    padding: 0;
+
+  .nav ul {
+    flex-direction: column; 
+    width: 100%;
+    align-items: center; 
+  }
+ .nav a {
+    display: block;
+    text-align: center;
+    width: 100%;
+  }
+  .banner {
+    padding: 20px 15px 60px;
+  }
+  .banner h1 {
+    font-size: 24px;
   }
   .card {
-    padding: 15px;
+    width: 100%;
+    min-width: 0;
   }
-  .footer p{
-    font-size: 0.9rem;
+  .container {
+    width: 95%;
   }
 }
