@@ -1,7 +1,7 @@
-* { box-sizing: border-box; margin: 0; padding: 0; }
+* { box-sizing: border-box; margin: 0; padding: 0;}
 html, body { height: 100%; font-family: Arial, Helvetica, sans-serif; }
 body {
-  background: #f7f9fb;
+  background: radial-gradient(circle at top, #0f2027, #203a43, #2c5364);
   color: #1a1a1a;
   line-height: 1.4;
   min-height: 120vh;
@@ -15,87 +15,85 @@ body {
 #id1{
     font-family: "Bitcount Grid Single";
 }
-.site-header {
-  background: #ffffff;
-  border-bottom: 1px solid #e6e9ee;
-  position: sticky;
-  top: 0;
-}
 .header{
-    background: #ffffff;
-  border-bottom: 1px solid #e6e9ee;
+  background: linear-gradient(90deg, #000000, #434343);
+  /* border-bottom: 1px solid #e6e9ee; */
   position: sticky;
   top: 0;
 }
 .brand {
   display: inline-block;
+  color: white;
 }
 .brand-link {
   font-weight: bold;
   font-size: 20px;
   text-decoration: none;
   color: #1a1a1a;
+  color: white;
 }
 .tag { display: block; font-size: 12px; color: #666; margin-top: 4px; }
-.nav { float: right; }
+.nav { float: right; color: white;}
 .nav ul { list-style: none; display: flex; gap: 12px; }
-.nav a { text-decoration: none; color: #333; padding: 8px 10px; border-radius: 6px; }
-.nav a:hover { background: #eef4ff; }
-.hero {
+.nav a { text-decoration: none; color: white; padding: 8px 10px; border-radius: 6px; }
+.nav a:hover { background: linear-gradient(135deg, #f39c12, #f1c40f); }
+.banner {
   /* background: #ffffff; */
   padding: 30px;
   padding-bottom: 100px;
   margin-top: 16px;
   border-radius: 8px;
-  border: 1px solid #e6e9ee;
+  /* border: 1px solid #e6e9ee; */
   text-align: center;
   background-image: url(images/flight.jpg);
   background-position: center;
   text-align: center;
   background-size: cover;
-  
+  margin: 0;
 
 }
-.hero h1 { font-size: 28px; margin-bottom: 8px; }
-.hero p { color: #555; margin-bottom: 12px; }
-.buttons { margin-bottom: 8px; }
-.btn {
+.banner h1 { font-size: 28px; margin-bottom: 8px; }
+.banner p { color: #555; margin-bottom: 12px; }
+.buttons { margin-bottom: 8px;}
+.button {
   display: inline-block;
   text-decoration: none;
   color: #fff;
   background: #3b82f6;
   padding: 8px 12px;
   margin: 4px;
-  border-radius: 6px;
+  border-radius: 10px;
   font-weight: 600;
   
 }
-.btn:hover { background: #2b6fd6; }
+.button:hover { background: #2b6fd6; }
 .features {
   margin: 18px 0;
-  background: #fff;
+  background:rgba(255, 255, 255, 0.05);
   padding: 14px;
   border-radius: 8px;
-  border: 1px solid #e6e9ee;
+  /* border: 1px solid #e6e9ee; */
+  font-family: "Playfair Display";
+  color: white;
 }
-.features ul { list-style: disc; padding-left: 18px; color: #444; }
+.features ul { list-style: disc; padding-left: 18px; color: #444; color: white;}
 
 
-.destinations { margin-bottom: 18px; }
+.destinations { margin-bottom: 18px; color: white;; }
 .cards {
   display: flex;
   gap: 12px;
   margin-top: 12px;
 }
 .card {
-  background: #fff;
+  background: linear-gradient(180deg, #1b1b1b, #111);
   text-decoration: none;
   color: inherit;
   width: 30%;
   min-width: 200px;
   padding: 12px;
   border-radius: 8px;
-  border: 1px solid #e6e9ee;
+  /* border: 1px solid #e6e9ee; */
 }
 .card h3 { margin-top: 8px; margin-bottom: 6px; }
 .card p { color: #666; font-size: 14px; }
@@ -112,7 +110,13 @@ body {
   font-size: 13px;
   padding-bottom: 200px;
 }
-.site-footer { margin-top: 18px; color: #666; font-size: 14px; text-align: center; padding: 16px 0; }
+.footer {background: #0a0a0a;
+  text-align: center;
+  padding: 20px 10px;
+  color: #aaa;
+  font-size: 0.9rem;
+  border-top: 1px solid #222;
+}
 #japan{
     background-image: url(images/Japan1.jpg);
     background-size: cover;
@@ -161,11 +165,45 @@ body {
     background-image: url(images/Dubai3.jpg);
     background-position: center;
     background-size: cover;
-    padding-bottom: 300px;
+    padding-bottom: 400px;
 }
 
 
 .card:hover{
     transform: scale(1.05);
     transition: all 0.3s ease;
+    background: linear-gradient(180deg, #2a2a2a, #1a1a1a);
+}
+.day{
+  color: white;
+}
+.aside{
+  color: white;
+}
+/* For smaller screens */
+@media (max-width:480px){
+  .brand-link{
+    font-size: 1.5rem;
+  }
+  .banner h1{
+    font-size: 1.6rem;
+  }
+  .buttons a{
+    width: 100%;
+    text-align: center;
+  }
+  .nav ul{
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .features ul{
+    padding: 0;
+  }
+  .card {
+    padding: 15px;
+  }
+  .footer p{
+    font-size: 0.9rem;
+  }
 }
