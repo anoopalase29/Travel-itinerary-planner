@@ -13,3 +13,4 @@ Journify - A Simple yet Amazing Travel Planner✈️
 --Responsive Design
 
 Made with ❤️ for travelers who love hustle free trip planning.
+Crafted by Anoop Alase
